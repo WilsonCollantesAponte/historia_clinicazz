@@ -1,0 +1,238 @@
+/* Archivo: bienvenida.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b3e5fc; /* Color de fondo */
+  color: #333;
+}
+
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #007bb5; /* Color del texto del logo */
+}
+
+.menubar {
+  list-style: none;
+  display: flex;
+}
+
+.menubar li {
+  margin-left: 20px;
+}
+
+.menubar a {
+  text-decoration: none;
+  color: #007bb5;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger i {
+  font-size: 24px;
+}
+
+.main-container {
+  display: flex;
+  height: calc(
+    100vh - 80px
+  ); /* Ajusta según el tamaño real de tu cabecera y pie de página */
+  padding: 20px;
+  margin-top: 60px; /* Asegúrate de que este valor sea igual a la altura de tu cabecera */
+}
+
+.sidebar {
+  background-color: #0288d1; /* Color de fondo del sidebar */
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #0277bd;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #b3e5fc;
+  border-radius: 8px;
+  overflow-y: auto;
+  margin-top: 0; /* Eliminar margen superior aquí */
+}
+
+.container-footer {
+  background-color: #007bb5;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-footer img {
+  height: 50px;
+}
+
+.redes-footer a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.redes-footer a:hover {
+  color: #ffeb3b;
+}
+
+/* Estilos del sidebar */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  position: relative;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #0277bd;
+}
+
+/* Estilos del menú desplegable */
+.dropdown .dropdown-menu {
+  display: none;
+  position: relative; /* Cambiar a relativo */
+  left: 0;
+  top: 0; /* Ajustar a top 0 para que aparezca directamente abajo */
+  background-color: #0288d1;
+  border-radius: 4px;
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  padding: 10px;
+  white-space: nowrap; /* Evita que el texto se envuelva */
+}
+
+.dropdown-menu a:hover {
+  background-color: #0277bd;
+}
+
+/* Estilos para el botón de búsqueda y el input */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+  width: 300px;
+  height: 61px;
+  
+}
+
+#document_number {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+  width: 300px;
+  height: 61px;
+}
+
+#search-button {
+
+  margin-right: 10px;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+  background-image: url("../img/lupa.png"); /* Ruta a tu imagen de la lupa */
+  background-size: 25px; /* Ajusta el tamaño de la imagen de la lupa */
+  background-repeat: no-repeat;
+  background-position: right;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
